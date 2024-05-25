@@ -15,12 +15,12 @@ body {
 }
 
 a {
-  color: #ffc451;
+  /* color: #ffc451; */
   text-decoration: none;
 }
 
 a:hover {
-  color: #ffd584;
+  /* color: #ffd584; */
   text-decoration: none;
 }
 
@@ -182,7 +182,7 @@ h6 {
 }
 
 #header.header-scrolled .navbar a:hover {
-  color: #ffc451;
+  color: #1d1d1c;
   /* Altera a cor do texto do menu para laranja ao passar o mouse */
 }
 
