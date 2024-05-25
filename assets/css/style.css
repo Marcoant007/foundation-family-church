@@ -1006,16 +1006,11 @@ section {
 }
 
 .text-oferta {
-  color: #fff;
-  /* Cor do texto */
-  font-size: 16px;
-  /* Tamanho da fonte */
-  line-height: 1.5;
-  /* Altura da linha */
-  margin-top: 20px;
-  /* Espaçamento superior */
-  text-align: center;
-  /* Alinhamento do texto */
+  color: #fff; /* Cor do texto */
+  font-size: 16px; /* Tamanho da fonte */
+  line-height: 1.5; /* Altura da linha */
+  margin-top: 20px; /* Espaçamento superior */
+  text-align: center; /* Alinhamento do texto */
   z-index: 5;
 }
 
@@ -1026,15 +1021,23 @@ section {
 }
 
 .sublinhado-span {
-  position: relative;
-  /* Para tornar o posicionamento do sublinhado relativo ao span */
+  position: relative; /* Para tornar o posicionamento do sublinhado relativo ao span */
 }
 
 .sublinhado-span img {
   position: absolute;
-  bottom: -13px;
-  height: auto;
-  left: -19px;
+    bottom: -13px;
+    /* width: 100%; */
+    height: auto;
+    /* height: 172%; */
+    left: -19px;
+}
+
+@media (max-width: 768px) {
+  .sublinhado-span img {
+      width: 120px;
+  }
+
 }
 
 .left-decoration,
@@ -1067,11 +1070,9 @@ section {
 
 /* Media query para dispositivos móveis */
 @media (max-width: 768px) {
-
   .left-decoration,
   .right-decoration {
-    display: none;
-    /* Oculta as divs em dispositivos móveis */
+    display: none; /* Oculta as divs em dispositivos móveis */
   }
 }
 
