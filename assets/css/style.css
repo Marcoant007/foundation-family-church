@@ -1035,7 +1035,8 @@ section {
 
 @media (max-width: 768px) {
   .sublinhado-span img {
-      width: 120px;
+    margin-left: 10px;
+    width: 200px;
   }
 
 }
