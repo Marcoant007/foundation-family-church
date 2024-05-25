@@ -126,11 +126,12 @@ h6 {
   padding: 15px 0;
 }
 
-.sub-header{
+.sub-header {
   background-color: #FFFFFF;
   transition: all 0.5s;
   z-index: 997;
-  height: 174px;
+  padding: 20px 0;
+  /* Adiciona espaçamento interno */
 }
 
 .sub-header .title-container {
@@ -141,18 +142,33 @@ h6 {
 .sub-header h4 {
   font-style: normal;
   font-weight: 800;
-  font-size: 61px;
-  line-height: 133.5%;
+  font-size: 40px;
+  /* Reduz o tamanho da fonte para telas menores */
+  line-height: 1.5;
+  /* Redefine a altura da linha */
   color: #101111;
   margin: 0;
-  display: inline-block; /* Adiciona display inline-block para alinhar com o span */
 }
 
 .sub-header span {
   color: #101111;
-  margin-top: 5px; 
   font-size: 30px;
-  text-decoration: underline; 
+  margin-left: 5px;
+  margin-top: 5px;
+  text-decoration: underline;
+}
+
+/* Adiciona uma regra de mídia para telas menores */
+@media (max-width: 768px) {
+  .sub-header h4 {
+    font-size: 28px;
+    /* Reduz o tamanho da fonte para telas menores */
+  }
+
+  .sub-header span {
+    font-size: 18px;
+    /* Reduz o tamanho da fonte para telas menores */
+  }
 }
 
 #header.header-scrolled,
@@ -161,11 +177,13 @@ h6 {
 }
 
 #header.header-scrolled .navbar a {
-  color: #fff; /* Altera a cor do texto do menu para branco */
+  color: #fff;
+  /* Altera a cor do texto do menu para branco */
 }
 
 #header.header-scrolled .navbar a:hover {
-  color: #ffc451; /* Altera a cor do texto do menu para laranja ao passar o mouse */
+  color: #ffc451;
+  /* Altera a cor do texto do menu para laranja ao passar o mouse */
 }
 
 /* Mostra a logo branca quando o header é rolado */
@@ -180,7 +198,8 @@ h6 {
 
 .get-started-btn.header-scrolled,
 .get-started-btn.header-inner-pages {
-  color: #fff; /* Mantém a cor do texto branco */
+  color: #fff;
+  /* Mantém a cor do texto branco */
 }
 
 #header .logo {
@@ -201,8 +220,7 @@ h6 {
   color: #ffc451;
 }
 
-#header .logo img {
-}
+#header .logo img {}
 
 /*--------------------------------------------------------------
 #  Get Startet Button
@@ -460,10 +478,13 @@ h6 {
   width: 100%;
   min-height: 100vh;
   background: url("../img/icons/imagem-fundo-background.png") center;
-  background-size: cover; /* Ou 'cover', dependendo da sua preferência */
-  background-repeat: no-repeat; /* Adiciona esta linha */
+  background-size: cover;
+  /* Ou 'cover', dependendo da sua preferência */
+  background-repeat: no-repeat;
+  /* Adiciona esta linha */
   position: relative;
 }
+
 #hero::before {
   content: "";
   position: absolute;
@@ -471,7 +492,8 @@ h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(16, 17, 17, 0.9); /* Cor #101111 com 90% de opacidade */
+  background-color: rgba(16, 17, 17, 0.9);
+  /* Cor #101111 com 90% de opacidade */
 }
 
 
@@ -493,8 +515,10 @@ h6 {
 .family-image {
   background-image: url('../img/icons/sublinhado-familia.svg');
   background-repeat: no-repeat;
-  background-position: left bottom; /* Posiciona a imagem à esquerda e um pouco para baixo */
-  padding-left: 20px; /* Ajuste conforme necessário para mover a palavra para a direita */
+  background-position: left bottom;
+  /* Posiciona a imagem à esquerda e um pouco para baixo */
+  padding-left: 20px;
+  /* Ajuste conforme necessário para mover a palavra para a direita */
 }
 
 
@@ -604,6 +628,101 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.default-title-h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+
+.underline-container {
+  position: relative;
+  display: inline-block;
+}
+
+.underline {
+  position: absolute;
+  bottom: 0;
+  /* Alinha a imagem ao fundo do container */
+  left: 0;
+  width: 100%;
+  height: auto;
+  transform: translateY(50%);
+  /* Ajusta a posição da imagem para alinhar com a palavra */
+}
+
+@media (max-width: 768px) {
+  .default-title-h3 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .default-title-h3 {
+    font-size: 20px;
+  }
+}
+
+.about {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* Para ocupar a altura total da viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #101111;
+}
+
+
+
+.about .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.about .background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about .content-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  /* Para garantir que esteja sobre o background */
+  color: #fff;
+  /* Para garantir que o texto seja visível sobre o background */
+  flex-wrap: wrap;
+  /* Adiciona flex-wrap para permitir quebra de linha */
+}
+
+.about .image-container {
+  flex: 1;
+  padding: 150px;
+  /* Ajuste conforme necessário */
+}
+
+.about .image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.about .text-container {
+  flex: 1;
+  padding: 20px;
+  /* Ajuste conforme necessário */
+  margin-top: 3%
+}
+
 .about .content h3 {
   font-weight: 700;
   font-size: 28px;
@@ -632,8 +751,44 @@ section {
   margin-bottom: 0;
 }
 
-#about {
-  background-color: #101111;
+@media (max-width: 768px) {
+  .about {
+    height: auto;
+    /* Permite que a altura se ajuste ao conteúdo */
+    padding: 20px 0;
+    /* Adiciona espaçamento superior e inferior */
+  }
+
+  .about .content-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about .text-container {
+    padding: 10px;
+    margin: 20px 0;
+    /* Adiciona margem superior e inferior para espaçamento */
+  }
+
+  .about .image-container {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about .content h3 {
+    font-size: 24px;
+    /* Ajusta o tamanho da fonte para telas menores */
+  }
+
+  .about .content ul li {
+    padding: 0 0 8px 20px;
+  }
+
+  .about .content ul i {
+    font-size: 18px;
+    /* Ajusta o tamanho do ícone para telas menores */
+  }
 }
 
 /*--------------------------------------------------------------
