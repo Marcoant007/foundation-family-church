@@ -1365,8 +1365,8 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  background: #ffc451;
-  color: #151515;
+  background: #2a921d;
+  color: #fff;
   float: left;
   width: 44px;
   height: 44px;
@@ -1469,16 +1469,16 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #ffc451;
+  background: #2a921d;
   border: 0;
   padding: 10px 24px;
-  color: #151515;
+  color: #ffffff;
   transition: 0.4s;
   border-radius: 4px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #ffcd6b;
+  background: #26b413;
 }
 
 @keyframes animate-loading {
@@ -1547,7 +1547,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: black;
+  background: #151515;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
@@ -1694,4 +1694,10 @@ section {
   text-align: center;
   font-size: 13px;
   color: #fff;
+}
+
+.divider {
+  height: 2px;
+  background-color: #fff;
+  width: 510%; /* Ajusta a largura da linha */
 }
