@@ -146,7 +146,9 @@
             <div class="testimonial-item">
               <img src="assets/img/testimonials/poster1.jpeg" class="testimonial-img" alt="">
               <h3>Culto Domingo</h3>
-              <div class="hour hour-1"><h4>DOM - 18:00</h4></div>
+              <div class="hour hour-1">
+                <h4>DOM - 18:00</h4>
+              </div>
               <p>
                 <br>
                 Venha participar dos nosso culto, momentos de adoração, reflexão e comunhão. <br>
@@ -160,10 +162,13 @@
             <div class="testimonial-item">
               <img src="assets/img/testimonials/poster2.jpeg" class="testimonial-img" alt="">
               <h3>Café Com Pastor</h3>
-              <div class="hour hour-4"><h4>SEX - 20:00</h4></div>
+              <div class="hour hour-4">
+                <h4>SEX - 20:00</h4>
+              </div>
               <p>
                 <br>
-                O Café Com Pastor é uma oportunidade única para um momento descontraído de conversa e orientação espiritual. <br>
+                O Café Com Pastor é uma oportunidade única para um momento descontraído de conversa e orientação
+                espiritual. <br>
                 Junte-se a nós para um café quente e um bate-papo inspirador com nosso pastor, <br>
                 onde você pode tirar dúvidas e receber conselhos à luz da palavra de Deus
               </p>
@@ -174,10 +179,13 @@
             <div class="testimonial-item">
               <img src="assets/img/testimonials/poster3.jpeg" class="testimonial-img" alt="">
               <h3>Curso de Batismo</h3>
-              <div class="hour hour-3"><h4>DOM - 17:00</h4></div>
+              <div class="hour hour-3">
+                <h4>DOM - 17:00</h4>
+              </div>
               <p>
                 <br>
-                O Curso de Batismo é uma jornada espiritual para aqueles que desejam entender o significado do batismo <br>
+                O Curso de Batismo é uma jornada espiritual para aqueles que desejam entender o significado do batismo
+                <br>
                 e dar o próximo passo na fé cristã. <br>
                 Neste curso, você aprenderá sobre os fundamentos da fé, o simbolismo do batismo <br>
                 e como ele representa uma nova vida em Cristo.
@@ -189,11 +197,14 @@
             <div class="testimonial-item">
               <img src="assets/img/testimonials/poster4.jpeg" class="testimonial-img" alt="">
               <h3>GFC Grupo Familiar de Comunhão</h3>
-              <div class="hour hour-3"><h4>QUI - 20:00</h4></div>
+              <div class="hour hour-3">
+                <h4>QUI - 20:00</h4>
+              </div>
               <p>
                 <br>
                 O Grupo Familiar de Comunhão é um espaço para fortalecer os laços familiares e espirituais. <br>
-                Toda quinta-feira, nos reunimos para compartilhar experiências, estudar a Bíblia e orar uns pelos outros. <br>
+                Toda quinta-feira, nos reunimos para compartilhar experiências, estudar a Bíblia e orar uns pelos
+                outros. <br>
                 Venha com sua família e faça parte deste círculo de amor e apoio.
               </p>
             </div>
@@ -203,7 +214,9 @@
             <div class="testimonial-item">
               <img src="assets/img/testimonials/poster5.jpeg" class="testimonial-img" alt="">
               <h3>Culto Terça</h3>
-              <div class="hour hour-5"><h4>TER - 20:00</h4></div>
+              <div class="hour hour-5">
+                <h4>TER - 20:00</h4>
+              </div>
               <p>
                 <br>
                 Nossos cultos de terça-feira são um refúgio espiritual no meio da semana, <br>
@@ -412,6 +425,13 @@
 
     </div>
   </section><!-- End Contact Section -->
+  <div id="whatsapp-float-button">
+    <div id="whatsapp-close-button">×</div>
+    <a href="https://wa.me/5527988740756?text=Olá,%20acessei%20o%20site%20da%20igreja%20e%20gostaria%20de%20tirar%20algumas%20dúvidas." target="_blank">
+      <img src="assets/img/icons/whatsapp.png" alt="WhatsApp">
+      <!-- <span class="whatsapp-placeholder">Fale Conosco</span> -->
+    </a>
+  </div>
 
   </main><!-- End #main -->
 
@@ -472,7 +492,8 @@
         &copy; Copyright <strong><span>Familia Alicerce</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        Designed by <a href="https://karol-uxdesing.netlify.app/">Karol Vieira</a> and Development by <a href="https://marcoantdeveloper.netlify.app/">Marco Antônio</a>
+        Designed by <a href="https://karol-uxdesing.netlify.app/">Karol Vieira</a> and Development by <a
+          href="https://marcoantdeveloper.netlify.app/">Marco Antônio</a>
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -492,6 +513,11 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    document.getElementById('whatsapp-close-button').addEventListener('click', function() {
+      document.getElementById('whatsapp-float-button').classList.add('hidden');
+    });
+  </script>
 
 </body>
 

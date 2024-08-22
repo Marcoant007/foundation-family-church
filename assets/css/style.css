@@ -1665,3 +1665,72 @@ section {
   background-color: var(--link-color);
   width: 510%;
 }
+
+#whatsapp-float-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+#whatsapp-float-button img {
+  width: 40px;
+  height: 40px;
+}
+
+#whatsapp-close-button {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+#whatsapp-float-button.hidden {
+  display: none;
+}
+
+#whatsapp-float-button:hover {
+  transform: scale(1.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-placeholder {
+  display: none;
+  position: absolute;
+  bottom: 70px;
+  right: -10px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  z-index: 1002;
+}
+
+#whatsapp-float-button:hover .whatsapp-placeholder {
+  display: block;
+}
+
+#whatsapp-float-button.hidden {
+  display: none;
+}
+
+
